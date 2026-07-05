@@ -1,0 +1,62 @@
+{
+  "name": "@bybrave/he2",
+  "version": "2.0.0",
+  "description": "Maintained he fork: robust HTML entity encoder/decoder with full Unicode support, now as ESM + CommonJS with built-in TypeScript types and zero dependencies. Drop-in for he.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "bin": {
+    "he": "./bin/he.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "lib/",
+    "dist/",
+    "bin/"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "node --test",
+    "test-types": "tsc --strict --noEmit --moduleResolution bundler --target es2020 --types node test/types.ts",
+    "prepublishOnly": "npm run build && npm test && npm run test-types"
+  },
+  "keywords": [
+    "html",
+    "entities",
+    "entity",
+    "encode",
+    "decode",
+    "unicode",
+    "esm",
+    "typescript"
+  ],
+  "author": "bybrave",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bybraveHQ/he2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bybraveHQ/he2/issues"
+  },
+  "homepage": "https://github.com/bybraveHQ/he2#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}
