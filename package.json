@@ -1,6 +1,6 @@
 {
   "name": "@bybrave/he2",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Maintained he fork: robust HTML entity encoder/decoder with full Unicode support, now as ESM + CommonJS with built-in TypeScript types and zero dependencies. Drop-in for he.",
   "type": "module",
   "main": "./dist/index.cjs",

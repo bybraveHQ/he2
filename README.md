@@ -67,6 +67,15 @@ Drop-in — replace the import:
 
 All output is identical to `he@1.2.0`. Unlike `entities` or `html-entities`, this keeps the exact `he` API (`encode`/`decode`/`escape`/`unescape` with the same options), so no code changes are needed.
 
+## Support
+
+If this package saves you time, you can support maintenance:
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-buy%20me%20a%20coffee-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/bybrave)
+[![Bitcoin](https://img.shields.io/badge/Bitcoin-BTC-F7931A?logo=bitcoin&logoColor=white)](#support)
+
+Bitcoin (BTC): `bc1q37557q5jpeaxqydzwvf3jgj7zhnfpn2td3q40q`
+
 ## License
 
 MIT. Copyright © Mathias Bynens; fork © bybrave.
